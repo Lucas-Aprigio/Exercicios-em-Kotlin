@@ -1,0 +1,71 @@
+class Carro1(){
+     
+    private var modelo: String = ""
+    private var ano: Int = 1900
+    private var velocidade: Int = 0
+    
+    fun exibeModelo(): String{
+        return modelo
+    }
+    
+    fun setModelo(novoModelo: String){
+        this.modelo=novoModelo
+    }
+    
+    fun exibeAno(): Int{
+        return ano
+    }
+    
+    fun setAno(novoAno: Int){
+        this.ano=novoAno    }
+
+
+	fun exibeVelocidade(): Int{
+        return velocidade
+    }
+    
+    fun setVelocidade(novoVelocidade: Int){
+        this.velocidade = novoVelocidade
+    }
+}
+
+fun main(){
+    
+    var c0 =  Carro1()
+    var c1 =  Carro1()
+    var c2 =  Carro1()
+ 
+    c0.setModelo("Jeep")
+    c0.setAno(2020)
+    c0.setVelocidade(70)
+    
+    c1.setModelo("Monza")
+    c1.setAno(2000)
+    c1.setVelocidade(200)
+    
+    c2.setModelo("Vectra")
+    c2.setAno(2002)
+    c2.setVelocidade(220)
+    
+    println("Carro C0: ")
+    println(c0.exibeModelo())
+    println(c0.exibeAno())
+    println(c0.exibeVelocidade())
+    println()
+    
+    println("Carro C1: ")
+    println(c1.exibeModelo())
+    println(c1.exibeAno())
+    println(c1.exibeVelocidade())
+    println()
+    
+    println("Carro C2: ")
+    println(c2.exibeModelo())
+    println(c2.exibeAno())
+    println(c2.exibeVelocidade())
+    println()
+    
+    if(c0.exibeAno()<2000 || c1.exibeAno()<2000 || c2.exibeAno()<2000){
+     println("Você precisa realizar a venda de um ou mais veículos, por serem inferiores ao ano 2000")
+    }
+}
